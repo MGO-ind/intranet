@@ -35,7 +35,7 @@ const TransitionLink = ({
       }`}
     >
       <Icon className={selected ? "text-blue-400" : ""} />
-      <span>{title}</span>
+      <span>{title} </span>
     </Link>
   );
 };
