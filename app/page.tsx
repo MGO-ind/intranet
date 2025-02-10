@@ -1,4 +1,4 @@
-
+import SideBar from "./componentes/sidebar/sidebar";
 
 export default function Home() {
   return (
