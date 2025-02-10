@@ -1,5 +1,6 @@
 
-import { AccountToggle } from "./accounToggle"; 
+
+import { AccountToggle } from "./accountToggle";
 import { Plan } from "./plan";
 import { RouteSelect } from "./routeSelect";
 import { Search } from "./search";
