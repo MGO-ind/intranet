@@ -4,7 +4,7 @@ import { FiDollarSign, FiHome, FiLink, FiPaperclip, FiUsers, } from "react-icons
 import Link from "next/link";
 
 
-export const RouteSelect = () => {
+export const RouteSelect = () => { 
   return (
     <div className="space-y-1">
       <TransitionLink Icon={FiHome} selected={false} title="Inicio" href="/"/>
