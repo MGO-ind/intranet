@@ -2,7 +2,7 @@ import { Command } from 'cmdk';
 import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import { FiEye, FiLink, FiLogOut, FiPhone, FiPlus } from 'react-icons/fi';
 
-export const CommandMenu = ({
+export const CommandMenu = ({ 
         open, 
         setOpen,
     }: {
