@@ -1,0 +1,11 @@
+export default function Inventarios() {
+
+  return (
+
+      <div className="overflow-y sticky top-4 h-[calc(100vh-32px-48px)]" >
+       Inventario
+    </div>
+
+
+  );
+}
