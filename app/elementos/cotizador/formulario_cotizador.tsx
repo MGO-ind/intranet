@@ -6,6 +6,7 @@ import Swal from 'sweetalert2'
 export const FormularioCotizador = () => {
 
     const form = useRef;
+    form: useRef<HTMLFormElement>
 
     const  [ values, setValues ] = useState({
         tipoDeCambio: "",
@@ -132,7 +133,7 @@ export const FormularioCotizador = () => {
     
         const borrarForm = (event: { preventDefault: () => void; }) => {
             event.preventDefault();
-            form.current.reset();
+            //form.current.reset();
         };
 
     return (
@@ -150,7 +151,7 @@ export const FormularioCotizador = () => {
                     </span>
                 </p>
                      
-                <form  name="formCotizador" onSubmit={handleForm} ref={form}>
+                <form  name="formCotizador" onSubmit={handleForm} >
                 
                     <div className="row">
                         <label>Tipo de Cambio: $</label>
