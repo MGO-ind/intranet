@@ -1,3 +1,4 @@
+"use client"
 import TopBar from "./topBar";
 import { Grid } from "./grid";
 
