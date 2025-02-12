@@ -2,7 +2,7 @@ import Swal from 'sweetalert2'
 
 export const LeonLagosFull = () => {
     const copiarValor=()=>{
-        var precio = document.createElement("input");
+        const precio = document.createElement("input");
         precio.setAttribute("value", "38800");
         document.body.appendChild(precio);
         precio.select();
