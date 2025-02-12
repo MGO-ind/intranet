@@ -45,20 +45,21 @@ export const FormularioCotizador = () => {
             };
             
 //dividir flete entre el tipo de cambio
-            function dividir(arr:number[]):number{
+            function dividir(arr:number[]): any{
                 if(arr.length == 0){
                     return 0;
                 } else {              
                   return arr[0]/arr[1]  
                 }
             };
+            const div1= dividir([ flete1, tipoDeCambio1])
+            const div = Number(div1)
             
 // if de que no este ningun input vacio   
             if(values.tipoDeCambio !=='' && values.costoBasico !== '' && values.gastosAduanales !== '' && values.utilidad !== '' && values.flete !==''){
                 if(tamanio == "Jumbo"){
                     //dividir el resultado de flete entre costo, entre galones de unidad
-                    const div1= dividir([flete1, tipoDeCambio1])
-                    const div = Number(div1)
+                    
                     function dividirJumbo(arr:number[]):number{
                         const divJumbo: number[] =[10000]
                         const divJumbo2 = Number(divJumbo)
@@ -86,7 +87,7 @@ export const FormularioCotizador = () => {
 
                 } else {
                     //dividir el resultado de flete entre costo, entre galones de unidad
-                    const div= dividir([flete1, tipoDeCambio1])
+                    
                     function dividirFull(arr:number[]):number{
                         const divFull: number[] =[15500]
                         const divfull2 = Number(divFull)
