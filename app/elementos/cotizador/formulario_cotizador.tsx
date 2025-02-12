@@ -35,7 +35,7 @@ export const FormularioCotizador = () => {
             const utilidad1 = new Number(values.utilidad)
             const flete1 = new Number(values.flete)
 //suma de todos los inputs
-            function sumArray(arr:number[]):number{
+            function sumArray(arr:number[]):any{
                 if (arr.length == 0 ){
                     return 0;
                 } else {
@@ -44,7 +44,7 @@ export const FormularioCotizador = () => {
             };
             
 //dividir flete entre el tipo de cambio
-            function dividir(arr:number[]):number{
+            function dividir(arr:number[]):any{
                 if(arr.length == 0){
                     return 0;
                 } else {              
@@ -56,7 +56,7 @@ export const FormularioCotizador = () => {
             if(values.tipoDeCambio !=='' && values.costoBasico !== '' && values.gastosAduanales !== '' && values.utilidad !== '' && values.flete !==''){
                 if(values.tam == "Jumbo"){
                     //dividir el resultado de flete entre costo, entre galones de unidad
-                    function dividirJumbo(arr:number[]):number{
+                    function dividirJumbo(arr:number[]):any{
                         const divJumbo: number[] =[10000]
                         const divJumbo2 = Number(divJumbo)
                         if(arr.length == 0){
