@@ -6,7 +6,7 @@ import { OrigenLeon } from "./destinoSelect/origenLeon";
 import { FiDollarSign } from "react-icons/fi";
 import { OrigenMonterrey } from "./destinoSelect/origenMonterrey";
 
-export const ConsultaFletes = () => {
+export const ConsultaFlete  = () => {
 
     const  [ values, setValues ] = useState({
         origen:"",
