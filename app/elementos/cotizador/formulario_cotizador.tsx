@@ -17,7 +17,7 @@ export const FormularioCotizador = () => {
         tam:""
         });
 
-    const handleInputChange = (event: { target: { name: any; value: any;  }; })=> {
+    const handleInputChange = (event: { target: { name: string; value: string;  }; })=> {
             const { name, value }= event.target;
             setValues({
                 ...values,
