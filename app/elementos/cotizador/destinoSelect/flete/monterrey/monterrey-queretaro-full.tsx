@@ -2,7 +2,7 @@ import Swal from 'sweetalert2'
 
 export const MonterreyQueretaroFull = () => {
     const copiarValor=()=>{
-        var precio = document.createElement("input");
+        const precio = document.createElement("input");
         precio.setAttribute("value", "67000");
         document.body.appendChild(precio);
         precio.select();

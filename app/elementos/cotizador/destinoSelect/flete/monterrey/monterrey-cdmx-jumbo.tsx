@@ -2,7 +2,7 @@ import Swal from 'sweetalert2'
 
 export const MonterreyCdmxJumbo = () => {
     const copiarValor=()=>{
-        var precio = document.createElement("input");
+        const precio = document.createElement("input");
         precio.setAttribute("value", "52900");
         document.body.appendChild(precio);
         precio.select();
