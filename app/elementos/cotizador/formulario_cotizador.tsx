@@ -5,7 +5,7 @@ import Swal from 'sweetalert2'
 
 export const FormularioCotizador = () => {
 
-    const form = useRef();
+    const form = useRef;
 
     const  [ values, setValues ] = useState({
         tipoDeCambio: "",
