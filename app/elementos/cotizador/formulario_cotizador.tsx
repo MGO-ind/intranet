@@ -52,8 +52,7 @@ export const FormularioCotizador = () => {
                   return arr[0]/arr[1]  
                 }
             };
-            const div1= dividir([ flete1, tipoDeCambio1])
-            const div = Number(div1)
+            const div= dividir([ Number(flete1),Number( tipoDeCambio1)])
             
 // if de que no este ningun input vacio   
             if(values.tipoDeCambio !=='' && values.costoBasico !== '' && values.gastosAduanales !== '' && values.utilidad !== '' && values.flete !==''){
@@ -70,7 +69,7 @@ export const FormularioCotizador = () => {
                         }
                     };
                     const resultadoJumbo = dividirJumbo([div])
-                    const total= sumArray([ costoBasico1, gastosAduanales1, tipoDeCambio1, dta1, utilidad1, resultadoJumbo])
+                    const total= sumArray([ Number(costoBasico1), Number(gastosAduanales1), Number(tipoDeCambio1), Number(dta1), Number(utilidad1), resultadoJumbo])
                     const tot1 = new Number(total);
                     const tot2 = tot1.toFixed(2)
                     Swal.fire({ 
@@ -98,7 +97,7 @@ export const FormularioCotizador = () => {
                         }
                     };
                     const resultadoJumbo = dividirFull([div])
-                    const total= sumArray([ costoBasico1, gastosAduanales1, tipoDeCambio1, dta1, utilidad1, resultadoJumbo])
+                    const total= sumArray([ Number(costoBasico1), Number(gastosAduanales1), Number(tipoDeCambio1), Number(dta1), Number(utilidad1), resultadoJumbo])
                     const tot1 = new Number(total);
                     const tot2 = tot1.toFixed(2)
                     Swal.fire({
