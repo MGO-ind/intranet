@@ -34,6 +34,7 @@ export const FormularioCotizador = () => {
             const dta1 = new Number(values.dta)
             const utilidad1 = new Number(values.utilidad)
             const flete1 = new Number(values.flete)
+            const tamanio = new String(values.tam)
 //suma de todos los inputs
             function sumArray(arr:number[]):number{
                 if (arr.length == 0 ){
@@ -54,7 +55,7 @@ export const FormularioCotizador = () => {
             
 // if de que no este ningun input vacio   
             if(values.tipoDeCambio !=='' && values.costoBasico !== '' && values.gastosAduanales !== '' && values.utilidad !== '' && values.flete !==''){
-                if(values.tam == "Jumbo"){
+                if(tamanio == "Jumbo"){
                     //dividir el resultado de flete entre costo, entre galones de unidad
                     const div1= dividir([flete1, tipoDeCambio1])
                     const div = Number(div1)
