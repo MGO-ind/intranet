@@ -44,14 +44,14 @@ export const FormularioCotizador = () => {
             };
             
 //dividir flete entre el tipo de cambio
-            function dividir(arr:number[]):Number{
+            function dividir(arr:number[]):number{
                 if(arr.length == 0){
                     return 0;
                 } else {              
                   return arr[0]/arr[1]  
                 }
             };
-            const div= dividir([flete1, tipoDeCambio1])
+            const div = dividir([flete1, tipoDeCambio1])
 // if de que no este ningun input vacio   
             if(values.tipoDeCambio !=='' && values.costoBasico !== '' && values.gastosAduanales !== '' && values.utilidad !== '' && values.flete !==''){
                 if(values.tam == "Jumbo"){
