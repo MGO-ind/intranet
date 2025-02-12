@@ -1,4 +1,4 @@
-import { TopBar } from "./topBar";
+import TopBar from "./topBar";
 import { Grid } from "./grid";
 
 export function Dashboard() {
