@@ -44,7 +44,7 @@ export const FormularioCotizador = () => {
             };
             
 //dividir flete entre el tipo de cambio
-            function dividir(arr:number[]):number{
+            function dividir(arr:number[]):Number{
                 if(arr.length == 0){
                     return 0;
                 } else {              
