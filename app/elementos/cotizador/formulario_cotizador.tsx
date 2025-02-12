@@ -28,12 +28,12 @@ export const FormularioCotizador = () => {
     const handleForm = (event: { preventDefault: () => void; }) => {
             event.preventDefault();
 //convertir un string a numero entero
-            let tipoDeCambio1 = new Number(values.tipoDeCambio)
-            let costoBasico1 = new Number(values.costoBasico)
-            let gastosAduanales1 = new Number(values.gastosAduanales)
-            let dta1 = new Number(values.dta)
-            let utilidad1 = new Number(values.utilidad)
-            let flete1 = new Number(values.flete)
+            const tipoDeCambio1 = new Number(values.tipoDeCambio)
+            const costoBasico1 = new Number(values.costoBasico)
+            const gastosAduanales1 = new Number(values.gastosAduanales)
+            const dta1 = new Number(values.dta)
+            const utilidad1 = new Number(values.utilidad)
+            const flete1 = new Number(values.flete)
 //suma de todos los inputs
             function sumArray(arr:number[]):any{
                 if (arr.length == 0 ){
@@ -51,7 +51,7 @@ export const FormularioCotizador = () => {
                   return arr[0]/arr[1]  
                 }
             };
-            let div= dividir([flete1, tipoDeCambio1])
+            const div= dividir([flete1, tipoDeCambio1])
 // if de que no este ningun input vacio   
             if(values.tipoDeCambio !=='' && values.costoBasico !== '' && values.gastosAduanales !== '' && values.utilidad !== '' && values.flete !==''){
                 if(values.tam == "Jumbo"){
@@ -65,10 +65,10 @@ export const FormularioCotizador = () => {
                         return arr[0] / divJumbo2                  
                         }
                     };
-                    let resultadoJumbo = dividirJumbo([div])
-                    let total= sumArray([ costoBasico1, gastosAduanales1, tipoDeCambio1, dta1, utilidad1, resultadoJumbo])
-                    let tot1 = new Number(total);
-                    let tot2 = tot1.toFixed(2)
+                    const resultadoJumbo = dividirJumbo([div])
+                    const total= sumArray([ costoBasico1, gastosAduanales1, tipoDeCambio1, dta1, utilidad1, resultadoJumbo])
+                    const tot1 = new Number(total);
+                    const tot2 = tot1.toFixed(2)
                     Swal.fire({ 
                         title: "El Precio para el cliente de acuerdo a su seleccion (Jumbo) es: $"+`${tot2}`+" El flete que usted ingreso fue de $"+`${flete1}`+".00 ",
                         icon: "success",
@@ -84,18 +84,18 @@ export const FormularioCotizador = () => {
                 } else {
                     //dividir el resultado de flete entre costo, entre galones de unidad
                     function dividirFull(arr:number[]):any{
-                        let divJumbo: number[] =[15500]
-                        let divJumbo2 = Number(divJumbo)
+                        const divJumbo: number[] =[15500]
+                        const divJumbo2 = Number(divJumbo)
                         if(arr.length == 0){
                             return 0;
                         } else {
                         return arr[0] / divJumbo2                  
                         }
                     };
-                    let resultadoJumbo = dividirFull([div])
-                    let total= sumArray([ costoBasico1, gastosAduanales1, tipoDeCambio1, dta1, utilidad1, resultadoJumbo])
-                    let tot1 = new Number(total);
-                    let tot2 = tot1.toFixed(2)
+                    const resultadoJumbo = dividirFull([div])
+                    const total= sumArray([ costoBasico1, gastosAduanales1, tipoDeCambio1, dta1, utilidad1, resultadoJumbo])
+                    const tot1 = new Number(total);
+                    const tot2 = tot1.toFixed(2)
                     Swal.fire({
                         title: "El Precio para el cliente de acuerdo a su seleccion (Full) es: $"+`${tot2}`+" El flete que usted ingreso fue de $"+`${flete1}`+".00 ",
                         icon: "success",
@@ -122,8 +122,7 @@ export const FormularioCotizador = () => {
                         popup: 'border-radius-0'
                     }
                 });
-            }
-                    
+            }            
         };
     
     
