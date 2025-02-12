@@ -56,7 +56,8 @@ export const FormularioCotizador = () => {
             if(values.tipoDeCambio !=='' && values.costoBasico !== '' && values.gastosAduanales !== '' && values.utilidad !== '' && values.flete !==''){
                 if(values.tam == "Jumbo"){
                     //dividir el resultado de flete entre costo, entre galones de unidad
-                    const div= dividir([flete1, tipoDeCambio1])
+                    const div1= dividir([flete1, tipoDeCambio1])
+                    const div = Number(div1)
                     function dividirJumbo(arr:number[]):number{
                         const divJumbo: number[] =[10000]
                         const divJumbo2 = Number(divJumbo)
