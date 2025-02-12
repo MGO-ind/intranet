@@ -1,4 +1,3 @@
-import React from "react";
 import { TopBar } from "./topBar";
 import { Grid } from "./grid";
 
