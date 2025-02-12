@@ -36,7 +36,7 @@ export const FormularioCotizador = () => {
             const flete1 = new Number(values.flete)
             const tamanio = new String(values.tam)
 //suma de todos los inputs
-            function sumArray(arr:number[]):number{
+            function sumArray(arr:number[]): number{
                 if (arr.length == 0 ){
                     return 0;
                 } else {
