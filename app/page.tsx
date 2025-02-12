@@ -1,5 +1,5 @@
 import SideBar from "./elementos/sidebar/sidebar";
-import { dashboard } from "./elementos/inicio/dashboard";
+import { Dashboard } from "./elementos/inicio/dashboard";
 
 export default function Home() {
   return (
