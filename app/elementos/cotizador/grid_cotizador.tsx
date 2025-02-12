@@ -3,8 +3,12 @@ import { CambioDolares } from "./cambio_dolares";
 export const GridCotizador = () => {
     return (
       
-      <main className="grid gap-4 p-4 grid-cols-[220px,_1fr]">
+      <>
+    <div className="px-4 grid gap-3 grid-cols-12">
+        
         <CambioDolares/>
-      </main>   
+    </div>
+    
+    </>
     );
-  }
+  };
