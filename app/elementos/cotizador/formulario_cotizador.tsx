@@ -135,22 +135,22 @@ export const FormularioCotizador = () => {
     
         const borrarForm = (event: { preventDefault: () => void; }) => {
             event.preventDefault();
-            if (formRef.current !=""){
-                const formReset = formRef.current
+            //if (formRef.current !=""){
+                //const formReset = formRef.current
                 //formReset.reset()
 
-            } else {
-                Swal.fire({
-                    title: "El formulario esta vacio",
-                    width: 600,
-                    icon: "error",
-                    padding: "3em",
-                    color: "white",
-                    background: "black",
-                    customClass: {
-                        popup: 'border-radius-0'
-                    }
-                });
+            //} else {
+            //    Swal.fire({
+                    //title: "El formulario esta vacio",
+                  //  width: 600,
+                //    icon: "error",
+              //      padding: "3em",
+            //        color: "white",
+                    //background: "black",
+                  //  customClass: {
+                //        popup: 'border-radius-0'
+              //      }
+            //    });
             }
         };
 
