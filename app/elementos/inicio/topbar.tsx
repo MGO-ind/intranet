@@ -8,8 +8,8 @@ export const TopBar = () => {
     <div className="flex items-center justify-between p-0.5">
       <div>
         <span className="text-sm font-bold block">🚀 Buen día, Name!</span>
-        <span className="text-xs block text-stone-200">
-        <time dateTime={currentDate}>{currentDate}</time>
+        <span className="text-sm block text-stone-200">
+        {currentDate}
         </span>
       </div>
 
