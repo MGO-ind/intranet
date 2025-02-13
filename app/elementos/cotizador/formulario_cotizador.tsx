@@ -53,23 +53,27 @@ export const FormularioCotizador = () => {
                   return arr[0]/arr[1]  
                 }
             };
-            const div= dividir([ Number(flete1),Number( tipoDeCambio1)])
+            const div= dividir([ Number(flete1),Number( tipoDeCambio1)]);
+            const div1 = new Number(div);
+            const div2 = div1.toFixed(2);
+
             
 // if de que no este ningun input vacio   
             if(values.tipoDeCambio !=='' && values.costoBasico !== '' && values.gastosAduanales !== '' && values.utilidad !== '' && values.flete !==''){
                 if(tamanio == "Jumbo"){
                     //dividir el resultado de flete entre costo, entre galones de unidad
                     
-                    function dividirJumbo(arr:number[]):number{
-                        const divJumbo: number[] =[10000]
-                        const divJumbo2 = Number(divJumbo)
-                        if(arr.length == 0){
+                    function dividirJumbo(num: number){
+                        const divJumbo2 =10000
+                        //const divJumbo: number[] =[10000]
+                        //const divJumbo2 = Number(divJumbo)
+                        if(num == 0){
                             return 0;
                         } else {
-                        return arr[0] / divJumbo2                  
+                        return num / divJumbo2                  
                         }
                     };
-                    const resultadoJumbo = dividirJumbo([div])
+                    const resultadoJumbo = dividirJumbo(div)
                     const total= sumArray([ Number(costoBasico1), Number(gastosAduanales1), Number(tipoDeCambio1), Number(dta1), Number(utilidad1), resultadoJumbo])
                     const tot1 = new Number(total);
                     const tot2 = tot1.toFixed(2)
