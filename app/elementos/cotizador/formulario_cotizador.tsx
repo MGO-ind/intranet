@@ -1,11 +1,11 @@
 "use client"
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { AiFillCalculator } from "react-icons/ai";
 import Swal from 'sweetalert2'
 
 export const FormularioCotizador = () => {
 
-    //const form = useRef;
+    const formRef = useRef(null);
     //form: useRef<HTMLFormElement>
 
     const  [ values, setValues ] = useState({
@@ -135,7 +135,22 @@ export const FormularioCotizador = () => {
     
         const borrarForm = (event: { preventDefault: () => void; }) => {
             event.preventDefault();
-            //form.current.reset();
+            if (formRef.current !=""){
+                setValues
+
+            } else {
+                Swal.fire({
+                    title: "El formulario esta vacio",
+                    width: 600,
+                    icon: "error",
+                    padding: "3em",
+                    color: "white",
+                    background: "black",
+                    customClass: {
+                        popup: 'border-radius-0'
+                    }
+                });
+            }
         };
 
     return (
@@ -153,7 +168,7 @@ export const FormularioCotizador = () => {
                     </span>
                 </p>
                      
-                <form  name="formCotizador" onSubmit={handleForm} >
+                <form  name="formCotizador" onSubmit={handleForm} ref={formRef} >
                 
                     <div className="row">
                         <label>Tipo de Cambio: $</label>
