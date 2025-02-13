@@ -179,7 +179,7 @@ export const FormularioCotizador = () => {
                             className="w-6/12 text-black rounded-full text-sm sm:text-base h-8 sm:h-8 px-2 sm:px-5 m-2" 
                             type="number"
                             step="any"
-                            required
+                            
                             onChange={handleInputChange} 
                         />
                     </div>
@@ -191,7 +191,7 @@ export const FormularioCotizador = () => {
                             className="w-7/12 text-black rounded-full text-sm sm:text-base h-8 sm:h-8 px-2 sm:px-5 m-2" 
                             type="number"
                             step="any"
-                            required
+                          
                             onChange={handleInputChange} 
 
                         />
@@ -204,7 +204,7 @@ export const FormularioCotizador = () => {
                             className="w-6/12 text-black rounded-full text-sm sm:text-base h-8 sm:h-8 px-2 sm:px-5 m-2" 
                             type="number"  
                             step="any"
-                            required
+                        
                             onChange={handleInputChange} 
                         />
                     </div>
@@ -228,7 +228,7 @@ export const FormularioCotizador = () => {
                             className="w-8/12 text-black rounded-full text-sm sm:text-base h-8 sm:h-8 px-2 sm:px-5 m-2" 
                             type="number"
                             step="any"
-                            required
+                     
                             onChange={handleInputChange} 
                         />
                     </div> 
@@ -238,7 +238,7 @@ export const FormularioCotizador = () => {
                             name="flete" 
                             type="number"
                             step="any"
-                            required
+                          
                             placeholder="Costo del Flete"
                             onChange={handleInputChange} 
                             />
