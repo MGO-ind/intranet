@@ -9,7 +9,7 @@ export const TopBar = () => {
       <div>
         <span className="text-sm font-bold block">🚀 Buen día, Name!</span>
         <span className="text-xs block text-stone-200">
-        {currentDate}
+        <time dateTime={currentDate}></time>
         </span>
       </div>
 
