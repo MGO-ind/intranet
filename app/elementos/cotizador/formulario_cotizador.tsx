@@ -136,7 +136,8 @@ export const FormularioCotizador = () => {
         const borrarForm = (event: { preventDefault: () => void; }) => {
             event.preventDefault();
             if (formRef.current !=""){
-                setValues
+                const formReset = formRef.current
+                formReset.reset()
 
             } else {
                 Swal.fire({
