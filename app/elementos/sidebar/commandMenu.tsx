@@ -48,10 +48,10 @@ export const CommandMenu = ({
             
             
             <Command.Item className="flex cursor-pointer transition-colors p-2 text-sm text-stone-950 hover:bg-stone-200 rounded-xl items-center gap-2">
-            <link href="/cotizador">
+            
               <FiPlus />
               Cotizador
-              </link>
+             
             </Command.Item>
            
             
