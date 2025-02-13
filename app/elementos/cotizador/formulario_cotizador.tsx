@@ -54,8 +54,6 @@ export const FormularioCotizador = () => {
                 }
             };
             const div= dividir([ Number(flete1),Number( tipoDeCambio1)]);
-         
-
             
 // if de que no este ningun input vacio   
             if(values.tipoDeCambio !=='' && values.costoBasico !== '' && values.gastosAduanales !== '' && values.utilidad !== '' && values.flete !==''){
@@ -74,11 +72,11 @@ export const FormularioCotizador = () => {
                     };
                     const resultadoJumbo1 = dividirJumbo(div)
                     const resultadoJumbo = resultadoJumbo1.toFixed(2)
-                    const total= sumArray([ Number(costoBasico1), Number(gastosAduanales1), Number(tipoDeCambio1), Number(dta1), Number(utilidad1), Number(resultadoJumbo)])
+                    const total= sumArray([ Number(costoBasico1), Number(gastosAduanales1), Number(dta1), Number(utilidad1), Number(resultadoJumbo)])
                     const tot1 = new Number(total);
                     const tot2 = tot1.toFixed(2)
                     Swal.fire({ 
-                        title: "El Precio para el cliente de acuerdo a su seleccion (Jumbo) es: $"+`${tot2}`+"USD El flete que usted ingreso fue de $"+`${flete1}`+".00 "+" Resultado de las disiones, Resultado Dolares"+`${div}`+" REsultado Jumbo" +`${resultadoJumbo}`,
+                        title: "El Precio para el cliente de acuerdo a su seleccion (Jumbo) es: $"+`${tot2}`+" USD El flete que usted ingreso fue de $"+`${flete1}`+".00 "+" MX",
                         icon: "success",
                         width: 600,
                         padding: "3em",
@@ -92,17 +90,17 @@ export const FormularioCotizador = () => {
                 } else {
                     //dividir el resultado de flete entre costo, entre galones de unidad
                     
-                    function dividirFull(arr:number[]):number{
-                        const divFull: number[] =[15500]
-                        const divfull2 = Number(divFull)
-                        if(arr.length == 0){
+                    function dividirFull(num: number):number{
+                        const divFull2 =15500
+                        if(num == 0){
                             return 0;
                         } else {
-                        return arr[0] / divfull2                  
+                        return num / divFull2                  
                         }
                     };
-                    const resultadoJumbo = dividirFull([div])
-                    const total= sumArray([ Number(costoBasico1), Number(gastosAduanales1), Number(tipoDeCambio1), Number(dta1), Number(utilidad1), resultadoJumbo])
+                    const resultadoFull1 = dividirFull(div)
+                    const resultadoFull = resultadoFull1.toFixed(2)
+                    const total= sumArray([ Number(costoBasico1), Number(gastosAduanales1), Number(dta1), Number(utilidad1), Number(resultadoFull)])
                     const tot1 = new Number(total);
                     const tot2 = tot1.toFixed(2)
                     Swal.fire({
