@@ -45,13 +45,15 @@ export const CommandMenu = ({
         </Command.Empty>
 
         <Command.Group heading="Cotizador" className="text-sm mb-3 text-stone-400">
-            <link href="/cotizador">
+            
             
             <Command.Item className="flex cursor-pointer transition-colors p-2 text-sm text-stone-950 hover:bg-stone-200 rounded-xl items-center gap-2">
+            <link href="/cotizador">
               <FiPlus />
               Cotizador
+              </link>
             </Command.Item>
-            </link>
+           
             
           </Command.Group>
 
