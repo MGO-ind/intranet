@@ -76,7 +76,7 @@ export const FormularioCotizador = () => {
                     const tot1 = new Number(total);
                     const tot2 = tot1.toFixed(2)
                     Swal.fire({ 
-                        title: "El Precio para el cliente de acuerdo a su seleccion (Jumbo) es: $"+`${tot2}`+" USD El flete que usted ingreso fue de $"+`${flete1}`+".00 "+" MX",
+                        title: "El Precio para el cliente de acuerdo a su seleccion (Jumbo) es: $"+`${tot2}`+" USD. El flete que usted ingreso fue de $"+`${flete1}`+".00 "+" MX",
                         icon: "success",
                         width: 600,
                         padding: "3em",
@@ -104,7 +104,7 @@ export const FormularioCotizador = () => {
                     const tot1 = new Number(total);
                     const tot2 = tot1.toFixed(2)
                     Swal.fire({
-                        title: "El Precio para el cliente de acuerdo a su seleccion (Full) es: $"+`${tot2}`+" El flete que usted ingreso fue de $"+`${flete1}`+".00 ",
+                        title: "El Precio para el cliente de acuerdo a su seleccion (Full) es: $"+`${tot2}`+" USD. El flete que usted ingreso fue de $"+`${flete1}`+".00 MX",
                         icon: "success",
                         width: 600,
                         padding: "3em",
