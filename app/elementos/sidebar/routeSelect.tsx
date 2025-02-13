@@ -1,6 +1,6 @@
 
 import { IconType } from "react-icons";
-import { FiDollarSign, FiHome, FiLink, FiPaperclip, FiUsers, } from "react-icons/fi";
+import { FiDollarSign, FiHome, FiLink, FiPaperclip } from "react-icons/fi";
 import Link from "next/link";
 
 
