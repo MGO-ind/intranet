@@ -5,7 +5,7 @@ import Swal from 'sweetalert2'
 
 export const FormularioCotizador = () => {
 
-    const formRef = useRef(null);
+    //const formRef = useRef(null);
     //form: useRef<HTMLFormElement>
 
     const  [ values, setValues ] = useState({
@@ -169,7 +169,7 @@ export const FormularioCotizador = () => {
                     </span>
                 </p>
                      
-                <form  name="formCotizador" onSubmit={handleForm} ref={formRef} >
+                <form  name="formCotizador" onSubmit={handleForm} >
                 
                     <div className="row">
                         <label>Tipo de Cambio: $</label>
