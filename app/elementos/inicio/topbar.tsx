@@ -1,7 +1,11 @@
 import { FiCalendar } from "react-icons/fi";
 
 export const TopBar = () => {
-  const currentDate = new Date().toLocaleDateString();
+  const currentDat = new Date();
+
+
+  const currentDate = currentDat.toLocaleDateString("en-US");
+  
   
   return (
     <div className="border-b px-4 mb-4 mt-2 pb-4 border-stone-200">
