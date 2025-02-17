@@ -1,6 +1,8 @@
 
 //import { neon } from '@neondatabase/serverless';
 
+import { AiFillCalculator } from "react-icons/ai";
+
 export default function Page() {
   /*async function create(formData: FormData) {
     'use server';
@@ -13,9 +15,17 @@ export default function Page() {
   //}
 
   return (
-    <form >
+    <div className="col-span-4 rounded-3xl bg-zinc-800 border border-stone-500 shadow-lg h-[auto] sm:h-auto overflow-y-scroll scrollbar-thin">
+                <div className="p-4">
+                    <h3 className="flex items-center gap-1.5 font-medium">
+                        <AiFillCalculator /> Insertar un Costo
+                    </h3>
+                </div>
+                <form >
       <input type="text" placeholder="write a comment" name="comment" />
       <button type="submit">Submit</button>
     </form>
+    </div>
+    
   );
 }
