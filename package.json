@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^0.10.4",
     "@vercel/edge-config": "^1.4.0",
     "cmdk": "^1.0.4",
     "next": "15.1.6",
