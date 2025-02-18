@@ -1,5 +1,5 @@
 import Footer from "../footer";
-import Page from "./tablaInicio";
+import {Page} from "./tablaInicio";
 
 export const Grid = () => {
   return (
