@@ -7,11 +7,12 @@ export default function Home() {
     'use server';
     // Connect to the Neon database
     const sql = neon(`${process.env.DATABASE_URL}`);
-    const comment = formData.get('comment');
-    console.log(comment);
+    const comment1 = formData.get('comment');
+   
     // Insert the comment from the form into the Postgres database
-    await sql('INSERT INTO comments (comment) VALUES ($1)', [comment]);
+    await sql('INSERT INTO comments (comment) VALUES ($1)', [comment1]);
   }
+  console.log("asd");
   return (
     <main className="grid bg-black text-white gap-4 p-4 grid-cols-[220px,_1fr]">
       <SideBar />
