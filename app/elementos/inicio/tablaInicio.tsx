@@ -1,18 +1,19 @@
 
-//import { neon } from '@neondatabase/serverless';
+import { neon } from '@neondatabase/serverless';
 
 import { AiFillCalculator } from "react-icons/ai";
 
 export default function Page() {
-  /*async function create(formData: FormData) {
+  async function create(formData: FormData) {
     'use server';
     // Connect to the Neon database
     const sql = neon(`${process.env.DATABASE_URL}`);
     const costofletes = formData.get('costofletes');
-    await sql('SELECT * FROM costofletes');*/
-    // Insert the comment from the form into the Postgres database
+    await sql ('INSERT INTO costofletes(origen) VALUES ($1)', [costofletes]) 
+
+
     //await sql('INSERT INTO costofletes (costofletes) VALUES ($1)', [costofletes]);
-  //}
+  }
 
   return (
     <div className="col-span-4 rounded-3xl bg-zinc-800 border border-stone-500 shadow-lg h-[auto] sm:h-auto overflow-y-scroll scrollbar-thin">
@@ -22,7 +23,7 @@ export default function Page() {
                     </h3>
                 </div>
                 <form >
-      <input type="text" placeholder="write a comment" name="comment" />
+      <input type="text" placeholder="write a comment" name="costofletes" />
       <button type="submit">Submit</button>
     </form>
     </div>
