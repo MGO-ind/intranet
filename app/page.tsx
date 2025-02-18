@@ -7,11 +7,10 @@ export default function Home() {
     'use server';
     // Connect to the Neon database
     const sql = neon(`${process.env.DATABASE_URL}`);
-    const comment1 = formData.get('comment');
-  console.log("qwer");
+    const comment = formData.get('comment');
    
     // Insert the comment from the form into the Postgres database
-    await sql('INSERT INTO comments (comment) VALUES ($1)', [comment1]);
+    await sql('INSERT INTO comment (comment) VALUES ($1)', [comment]);
   }
   console.log("asd");
   return (
