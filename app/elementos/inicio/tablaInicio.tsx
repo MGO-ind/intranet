@@ -1,11 +1,11 @@
-
+'use server';
 import { neon } from '@neondatabase/serverless';
 
 import { AiFillCalculator } from "react-icons/ai";
 
 export default function Page() {
   async function create(formData: FormData) {
-    'use server';
+
     // Connect to the Neon database
     const sql = neon(`${process.env.DATABASE_URL}`);
     const costofletes = formData.get('costofletes');
