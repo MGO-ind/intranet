@@ -3,7 +3,7 @@ import { neon } from '@neondatabase/serverless';
 
 import { AiFillCalculator } from "react-icons/ai";
 
-export async function FormularioCostos() {
+export const FormularioCostos = () =>  {
   async function create({ formData }: { formData: FormData; }) {
 
     // Connect to the Neon database
