@@ -3,8 +3,8 @@ import { neon } from '@neondatabase/serverless';
 
 import { AiFillCalculator } from "react-icons/ai";
 
-export default function Page() {
-  async function create(formData: FormData) {
+export async function Page() {
+  async function create({ formData }: { formData: FormData; }) {
 
     // Connect to the Neon database
     const sql = neon(`${process.env.DATABASE_URL}`);
