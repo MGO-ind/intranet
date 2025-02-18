@@ -8,6 +8,7 @@ export default function Home() {
     // Connect to the Neon database
     const sql = neon(`${process.env.DATABASE_URL}`);
     const comment = formData.get('comment');
+    console.log(comment);
     // Insert the comment from the form into the Postgres database
     await sql('INSERT INTO comments (comment) VALUES ($1)', [comment]);
   }
