@@ -1,4 +1,4 @@
-"use client"
+"use server"
 import { neon } from '@neondatabase/serverless';
 
 import { AiFillCalculator } from "react-icons/ai";
